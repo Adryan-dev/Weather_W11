@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather api</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://l2.io/ip.js?var=ip" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <section class="weather-painel">
+        <div class="weather-city">
+
+            <div id="weather-box" class="weather-search">
+
+                <div class="alert_city">
+                    <p class="not-found">Error! City not found.</p>
+                </div>
+
+                <form>
+                    <div class="input-wraper">
+                        <input type="text" id="city_name" placeholder="City Name:">
+                        <input type="submit" id="weather_btn" value="Search">
+                    </div>
+                </form>
+            </div>
+
+            <div class="weather-box">
+                <div class="weather-title">
+                    <h1 id="city-name"></h1>
+                </div>
+                <div class="weather-info">
+                    <img src="" id="temp-img" alt="">
+                    <span id="temperatura" class="weather-value"></span>
+                </div>
+                <div class="weather-info">
+                    <span id="clima-description" class="weather-value"></span>
+                </div>
+
+                <div class="weather-next">
+                    <div class="weather-info">
+                        <span class="weather-label">Humidity</span>
+                        <br>
+                        <span id="humidity" class="weather-value">30</span>
+                    </div>
+                    <div class="weather-info">
+                        <span class="weather-label">Wind</span>
+                        <br>
+                        <span id="wind" class="weather-value">50</span>
+                    </div>
+                </div>
+
+                <div class="next-text"><h3>Next days:</h3></div>
+
+                <div class="next-days">
+                    <div class="days-box">
+
+                        <img src="" alt="">
+                        <span class="weather-value temp-max"></span>
+                        <span class="weather-value temp-min"></span>
+                    </div>
+
+                    <div class="days-box">
+                        <img src="" alt="">
+                        <span class="weather-value temp-max"></span>
+                        <span class="weather-value temp-min"></span>
+                    </div>
+
+                    <div class="days-box">
+                        <img src="" alt="">
+                        <span class="weather-value temp-max"></span>
+                        <span class="weather-value temp-min"></span>
+                    </div>
+
+                    <div class="days-box">
+                        <img src="" alt="">
+                        <span class="weather-value temp-max"></span>
+                        <span class="weather-value temp-min"></span>
+                    </div>
+
+                    <div class="days-box">
+                        <img src="" alt="">
+                        <span class="weather-value temp-max"></span>
+                        <span class="weather-value temp-min"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
